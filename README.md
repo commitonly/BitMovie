@@ -54,4 +54,9 @@
 <img src = "https://github.com/bitcampteam4/bitmovie/blob/main/src/main/webapp/image/Bitmovie_ERD.png?raw=true" width="800px">
 <br/>
 
+##예매
+
+<img width="1486" alt="스크린샷 2022-12-13 오후 8 24 53" src="https://user-images.githubusercontent.com/90983846/207305436-20d605e6-adf2-4f43-9890-a28a744ce42a.png">
+
+
 
