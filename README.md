@@ -11,17 +11,17 @@
 <br/>
 
 ## 프로젝트 일정 및 규모
-* 개발 기간 : 2022.11.01 ~ 12.08 (38일)
+* 개발 기간 : 2022.11.04 ~ 12.01
 * 인원 : 5명
 <br/>
 
 ## 팀원
-|**이름**|**역할**| **담당 기능**                              |**Git URL**                     |
-|-------|-----------|----------------------------------------|--------------------------------|
-| 김태민 | <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> | 예매,좌석,결제페이지,메인페이지                      | https://github.com/commitonly  |
-| 김성민 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> | 결제, 예매                                 | https://github.com/keeptrynjoy |
-| 이준민 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">  | 로그인, 회원가입, MyPage                      | https://github.com/Jxnmin      |
-| 유희준 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">  | 영화리스트, 상세페이지, 리뷰, 검색                   | https://github.com/J-LOOK-J    |
+|**이름**|**역할**|**담당 기능**                               |**Git URL**                     |
+|-------|-----------|--------------------------------------------|--------------------------------|
+| 김태민 | <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> | 결제, 예매, 좌석                                 | https://github.com/commitonly  |
+| 김성민 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> | 결제, 예매                                    | https://github.com/keeptrynjoy |
+| 이준민 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">  | 로그인, 회원가입, MyPage                         | https://github.com/Jxnmin      |
+| 유희준 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">  | 영화리스트, 상세페이지, 리뷰, 검색                    | https://github.com/J-LOOK-J    |
 | 정지훈 | <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> | 로그인, 회원가입, Mypage, 영화리스트, 상세페이지, 리뷰, 검색 | https://github.com/greetjeehun |
 <br/>
 
