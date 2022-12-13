@@ -60,17 +60,16 @@
 * 결제
 
 
-<br/>
-### 예매 
 
+
+
+
+### 예매 
 <img width="1486" alt="스크린샷 2022-12-13 오후 8 24 53" src="https://user-images.githubusercontent.com/90983846/207305436-20d605e6-adf2-4f43-9890-a28a744ce42a.png">
 
 ### 좌석
-
 <img width="1478" alt="스크린샷 2022-12-13 오후 8 26 28" src="https://user-images.githubusercontent.com/90983846/207305734-c6bed23d-ff23-4254-b406-c7eaec5688a3.png">
 
 ### 결제
-
-
 <img width="696" alt="스크린샷 2022-12-13 오후 8 26 52" src="https://user-images.githubusercontent.com/90983846/207305816-80b746d5-f9f6-403e-9219-c7a3ccb30d22.png">
 
