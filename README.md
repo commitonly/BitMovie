@@ -5,9 +5,12 @@
 영화 예매 서비스를 제공하기 위한 필요한 기능들을 리액트를 사용하여 구현했습니다.
 <br/>
 ## 기여한 파트
+* 메인페이지 박스오피스(Swiper)
 * 예매
 * 좌석
 * 결제
+
+<img width="1620" alt="스크린샷 2022-12-13 오후 8 46 42" src="https://user-images.githubusercontent.com/90983846/207309676-4c88dd29-c8ff-47ec-858c-66a33cc6b6ed.png">
 
 <img width="1456" alt="스크린샷 2022-12-13 오후 8 32 46" src="https://user-images.githubusercontent.com/90983846/207307075-3377a8de-722c-4cf2-9b85-3e0a865e4935.png">
 
