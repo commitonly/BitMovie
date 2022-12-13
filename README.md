@@ -59,12 +59,9 @@
 * 좌석
 * 결제
 
-
-<img width="1486" alt="스크린샷 2022-12-13 오후 8 24 53" src="https://user-images.githubusercontent.com/90983846/207305436-20d605e6-adf2-4f43-9890-a28a744ce42a.png">
-
+<img width="1456" alt="스크린샷 2022-12-13 오후 8 32 46" src="https://user-images.githubusercontent.com/90983846/207307075-3377a8de-722c-4cf2-9b85-3e0a865e4935.png">
 
 <img width="1478" alt="스크린샷 2022-12-13 오후 8 26 28" src="https://user-images.githubusercontent.com/90983846/207305734-c6bed23d-ff23-4254-b406-c7eaec5688a3.png">
-
 
 <img style="margin: 0 auto" width="696" alt="스크린샷 2022-12-13 오후 8 26 52" src="https://user-images.githubusercontent.com/90983846/207305816-80b746d5-f9f6-403e-9219-c7a3ccb30d22.png">
 
