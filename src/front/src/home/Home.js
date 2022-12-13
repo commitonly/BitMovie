@@ -148,9 +148,9 @@ function Home(props) {
                                         <Swiper className="myswiper"
                                                 modules={[Pagination, Autoplay]}
                                                 pagination={{ clickable: true }}
-                                                // navigation
+                                            // navigation
                                                 effect
-                                                // fontsize={20}
+                                            // fontsize={20}
                                                 speed={800}
                                                 loop={true}
                                                 slidesPerView={5}

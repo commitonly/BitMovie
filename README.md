@@ -4,7 +4,7 @@
 학습한 지식을 경험으로 만들기 위한 프로젝트입니다.<br/>
 영화 예매 서비스를 제공하기 위한 필요한 기능들을 리액트를 사용하여 구현했습니다.
 <br/>
-- 영화/인물 조회 및 검색
+- 영화/인물 조회 및 검색      
 - 영화 리스트 출력 및 상세정보 조회
 - 상영 영화 예매 및 결제 
 - 영화 결제시 좌석 선택
@@ -66,5 +66,5 @@
 <img width="1478" alt="스크린샷 2022-12-13 오후 8 26 28" src="https://user-images.githubusercontent.com/90983846/207305734-c6bed23d-ff23-4254-b406-c7eaec5688a3.png">
 
 
-<img width="696" alt="스크린샷 2022-12-13 오후 8 26 52" src="https://user-images.githubusercontent.com/90983846/207305816-80b746d5-f9f6-403e-9219-c7a3ccb30d22.png">
+<img style="margin: 0 auto" width="696" alt="스크린샷 2022-12-13 오후 8 26 52" src="https://user-images.githubusercontent.com/90983846/207305816-80b746d5-f9f6-403e-9219-c7a3ccb30d22.png">
 
