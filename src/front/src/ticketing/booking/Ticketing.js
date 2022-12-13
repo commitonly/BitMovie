@@ -10,9 +10,6 @@ import Swal from "sweetalert2";
 import moment from "moment";
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import axios from "axios";
-import {Button, CircularProgress} from "@mui/material";
-import EastIcon from '@mui/icons-material/East';
-import NextPlanIcon from '@mui/icons-material/NextPlan';
 import RefreshIcon from '@mui/icons-material/Refresh';
 
 function Ticketing(props) {
@@ -61,26 +58,13 @@ function Ticketing(props) {
         }
     }
 
-
-
-
-
-
-
-
-
-
     const goSeat = ()=> {
-
-
-
 
         if (input.movie===''){
             Swal.fire({
                 icon:"warning",
                 text:"영화를 선택해주세요"
             })
-
             return
 
         }
@@ -105,9 +89,6 @@ function Ticketing(props) {
             })
             return
         }
-        //
-        // if (input.length===3)
-        // {
         if (sessionStorage.login_status != null)
             navi("/ticketing/selectseat", {
                 state: {
@@ -115,25 +96,12 @@ function Ticketing(props) {
                 },
 
             });
-        // }else{
-        //         Swal.fire({
-        //             icon:"warning",
-        //             text:"잘 선택해"
-        //         })
-        // }
-
-
     }
 
     useEffect(()=>{
         get();
     },[])
 
-
-    // useEffect(()=>{
-    //     console.log(input,'뭘까');
-    //
-    // },[input]);
     const [mvlist,setMvlist] = useState([]);
     const [loading,setLoading]=useState(true);
     const [color, setColor] = useState("");
@@ -174,22 +142,22 @@ function Ticketing(props) {
     };
 
     // console.log(mvlist,'이게뭐야?');
+
     return (
         <div className={'whole'}>
 
             <div className={'tktable'}>
 
                 <div className={'tkbt'}>
-                    {/*<button className={'tkmenu'} onClick={()=> navi("/ticketing/timetable")}>상영시간표</button>*/}
                     <button className={'tkmenu2'} onClick={()=>refresh()}><RefreshIcon style={{marginBottom:'2%', marginLeft:'1%'}}/>예매 다시하기</button>
                 </div>
                 <div className={'together'}>
 
                     <div className={'newMv'}>
                         <button className={'mvbtn1'} onClick={()=>
-                            {
-                                get()
-                            }} style={{marginLeft:'10%', backgroundColor: 'white', fontSize:'15px',marginBottom:'0px',marginTop:'5%'}}>가나다순</button>
+                        {
+                            get()
+                        }} style={{marginLeft:'10%', backgroundColor: 'white', fontSize:'15px',marginBottom:'0px',marginTop:'5%'}}>가나다순</button>
                         <button className={'mvbtn1'} onClick={()=>
                         {
                             get2()
@@ -199,19 +167,19 @@ function Ticketing(props) {
                             get3()
                         }} style={{marginLeft:'20px', backgroundColor: 'white', fontSize:'15px',marginBottom:'0px'}}>평점순</button>
 
-                    <div className={'selectmv'}>
-                        {/*{*/}
-                        {/*    loading ?*/}
-                        {/*        <div style={{display:"flex",justifyContent:"center",alignItems:'center', height:'400px'}}>*/}
-                        {/*            <CircularProgress color={"inherit"}/>*/}
-                        {/*        </div>*/}
+                        <div className={'selectmv'}>
+                            {/*{*/}
+                            {/*    loading ?*/}
+                            {/*        <div style={{display:"flex",justifyContent:"center",alignItems:'center', height:'400px'}}>*/}
+                            {/*            <CircularProgress color={"inherit"}/>*/}
+                            {/*        </div>*/}
 
-                        {/*        :*/}
+                            {/*        :*/}
 
-                        <MovieList input={input} setInput={setInput} get={get} get2={get2} get3={get3} mvlist={mvlist} setMvlist={setMvlist} useEffect={useEffect} loading={loading} setLoading={setLoading} changeData={changeData}/>
+                            <MovieList input={input} setInput={setInput} get={get} get2={get2} get3={get3} mvlist={mvlist} setMvlist={setMvlist} useEffect={useEffect} loading={loading} setLoading={setLoading} changeData={changeData}/>
 
-                        {/*}*/}
-                    </div>
+                            {/*}*/}
+                        </div>
                     </div>
                     <div className={"movielocation"}>
                         <Location input={input} setInput={setInput} changeData={changeData} />
@@ -225,7 +193,7 @@ function Ticketing(props) {
                 <div className={'step'}>
 
                     <div className={'moviestep'}><span>선택 영화</span> <DoubleArrowIcon style={{marginBottom:'4px'}}/> <span style={{color:'gray'}}>{input.movie && JSON.parse(input.movie).m_name}</span>
-                        </div>
+                    </div>
                     <div className={'locationstep'}><span>선택 상영관</span> <DoubleArrowIcon style={{marginBottom:'4px'}}/> <span style={{color:'gray'}}>{input.location && JSON.parse(input.location).the_name}</span></div>
                     <div className={'daystep'}><span>선택 날짜</span> <DoubleArrowIcon style={{marginBottom:'4px'}}/> <span style={{color:'gray'}}> {input.calender && input.calender}</span></div>
                     <div className={'timestep'}><span>선택 시간대</span> <DoubleArrowIcon style={{marginBottom:'4px'}}/> <span style={{color:'gray'}}>{input.time && JSON.parse(input.time).scrt_stime.substring(0,5)}&nbsp;
@@ -235,9 +203,6 @@ function Ticketing(props) {
 
                 <button type={"button"} className={'selectseat'} onClick={checkId} ><span>좌석선택</span></button>
             </div>
-
-
-
 
         </div>
     );

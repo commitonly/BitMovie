@@ -2,6 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="data.repository.movie.JoinRevwRepository">
 
+
     <!--  해당 영화의 평점 나열  -->
     <select id="selectJoinRevw" parameterType="int" resultType="JoinRevw">
         SELECT rv.review_pk,
@@ -15,7 +16,8 @@
                  LEFT OUTER JOIN likerevw_tb lik ON rv.review_pk = lik.review_pk
                  LEFT OUTER JOIN report_tb rp ON rv.review_pk = rp.review_pk
         WHERE rv.movie_pk = #{movie_pk}
-        GROUP BY rv.review_pk;
+        GROUP BY rv.review_pk
+        ORDER BY rv.revw_date ASC ;
     </select>
 
     <!--  최근 등록된 평점 출력  -->

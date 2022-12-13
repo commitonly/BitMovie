@@ -4,12 +4,6 @@ import axios from "axios";
 import Age from "../../service/Age";
 import {CircularProgress} from "@mui/material";
 
-
-
-
-
-
-
 const MovieList = (props) => {
 
     const {input,setInput,changeData,get2,get3,mvlist,setMvlist}=props;
@@ -77,9 +71,7 @@ const MovieList = (props) => {
         <div>
 
             <div className={'mvcolor'}>
-                {/*<button className={'mvbtn1'} onClick={get} style={{marginLeft:'10%', backgroundColor:'white', fontSize:'15px',marginBottom:'0px',marginTop:'5%'}}>이름순</button>*/}
-                {/*<button className={'mvbtn1'} onClick={get2} style={{marginLeft:'20px', backgroundColor:'white', fontSize:'15px',marginBottom:'0px'}}><p style={{marginBottom:'0', fontSize:'15px'}}>예매율순</p></button>*/}
-                {/*<button className={'mvbtn1'} onClick={get3} style={{marginLeft:'20px', backgroundColor:'white', fontSize:'15px',marginBottom:'0px'}}>평점순</button>*/}
+
                 {
                     loading ?
                         <div style={{display:"flex",justifyContent:"center",alignItems:'center', height:'400px'}}>
@@ -87,29 +79,29 @@ const MovieList = (props) => {
                         </div>
                         :
                         mvlist.map((list, i) => (
-                    <ul key={i} style={{paddingLeft: '15px', marginBottom: '5px'}}>
-                    <li style={{listStyle: 'none', width: '400px', wordBreak: 'break-all'}}>
+                            <ul key={i} style={{paddingLeft: '15px', marginBottom: '5px'}}>
+                                <li style={{listStyle: 'none', width: '400px', wordBreak: 'break-all'}}>
 
-                {/*<img src={age} style={{width:'30px', float:'left'}}/>*/}
+                                    {/*<img src={age} style={{width:'30px', float:'left'}}/>*/}
 
-                    <button className={
-                        color === list ? "select-clicked" : "select-default"
-                } key={i} style={{fontSize: '15px'}}
-                    onClick={(e)=>{
+                                    <button className={
+                                        color === list ? "select-clicked" : "select-default"
+                                    } key={i} style={{fontSize: '15px'}}
+                                            onClick={(e)=>{
 
-                    onChangeTitleBg(list)
-                    changeData(e)}
+                                                onChangeTitleBg(list)
+                                                changeData(e)}
 
-                }
+                                            }
 
-                    value={JSON.stringify(list)} name={'movie'}>
-                    <Age age={list.m_age_grd} size={20}/>&nbsp;
-                    <div style={{width: '200px'}} className={'txt'}>&nbsp;{list.m_name}</div>
-                    </button>
+                                            value={JSON.stringify(list)} name={'movie'}>
+                                        <Age age={list.m_age_grd} size={20}/>&nbsp;
+                                        <div style={{width: '200px'}} className={'txt'}>&nbsp;{list.m_name}</div>
+                                    </button>
 
-                    </li>
-                    </ul>
-                    ))
+                                </li>
+                            </ul>
+                        ))
                 }
             </div>
 

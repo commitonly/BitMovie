@@ -79,24 +79,24 @@ const RenderCells = ({ currentMonth, selectedDate, onDateClick, changeData}) => 
             const cloneDay = day;
             days.push(
                 <button disabled={!isSameMonth(day, monthStart)}
-                    className={`col cell ${
-                        !isSameMonth(day, monthStart)
-                            ? 'disabled'  
-                            : isSameDay(day, selectedDate)
-                                ? 'selected' 
-                                : format(currentMonth, 'M') !== format(day, 'M')
-                                    ? 'not-valid'
-                                    : 'valid'
-                    }`}
-                    style={{color: `${day.getDay()===0?"red":day.getDay()===6?"blue":""}`}}
-                    key={day} value={format(day, 'yyyy-MM-dd')}
-                    name="calender"
-                    onClick={(e) =>{
-                        onDateClick(cloneDay)
-                        changeData(e)}
-                    }
+                        className={`col cell ${
+                            !isSameMonth(day, monthStart)
+                                ? 'disabled'
+                                : isSameDay(day, selectedDate)
+                                    ? 'selected'
+                                    : format(currentMonth, 'M') !== format(day, 'M')
+                                        ? 'not-valid'
+                                        : 'valid'
+                        }`}
+                        style={{color: `${day.getDay()===0?"red":day.getDay()===6?"blue":""}`}}
+                        key={day} value={format(day, 'yyyy-MM-dd')}
+                        name="calender"
+                        onClick={(e) =>{
+                            onDateClick(cloneDay)
+                            changeData(e)}
+                        }
                 >
-                        {formattedDate}
+                    {formattedDate}
                 </button>,
             );
             day = addDays(day, 1);
