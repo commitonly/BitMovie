@@ -8,7 +8,7 @@
     <!--생일 쿠폰 생성-->
     <insert id="insertBirthCoupon" parameterType="Coupon">
         INSERT INTO coupon_tb (coupon_pk, user_pk, c_class, c_amount, c_issue_date, c_exp_date, c_use_state)
-        SELECT #{coupon_pk}, #{user_pk}, "생일축하쿠폰", 5000, CURDATE(), ADDDATE(CURDATE(),60), 0
+        SELECT #{coupon_pk}, #{user_pk}, "생일축하쿠폰", 5000, CURDATE(), ADDDATE(CURDATE(),60), 1
     </insert>
     <!--쿠폰번호 중복 조회-->
     <select id="selectCouponNumber" parameterType="String" resultType="int">
