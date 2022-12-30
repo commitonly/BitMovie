@@ -9,7 +9,8 @@
 * 메인페이지 박스오피스 순위
   - api를 통해 얻어온 박스오피스를 순위별로 출력 Swiper를 사용하여 자동 슬라이드 및 드래그로 컨트롤 가능
 * 와이어프레임(Figma)<br/>
-![Group 1](https://user-images.githubusercontent.com/90983846/210101321-fc52eb6d-c103-48ac-8535-520f238e5720.png)
+<img width="858" alt="와이어프레임" src="https://user-images.githubusercontent.com/90983846/210101381-14ec6255-ad75-4dda-bc92-98473fb55cf0.png">
+
 
 
 * 예매<br/>
