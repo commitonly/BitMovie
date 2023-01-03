@@ -9,7 +9,6 @@ const Location = (props) => {
         axios.get('http://localhost:8282/theater/')
             .then((response) =>{
                 setMloc(response.data);
-                // console.log(response.data);
 
             });
     }

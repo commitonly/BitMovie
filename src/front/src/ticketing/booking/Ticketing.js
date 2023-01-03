@@ -135,13 +135,11 @@ function Ticketing(props) {
             });
     }
 
-    // console.log(typeof input.location,'타입');
 
     const index = () => {
         return <div>{dateFns.format(new Date(), "yyyy-MM-dd")}</div>;
     };
 
-    // console.log(mvlist,'이게뭐야?');
 
     return (
         <div className={'whole'}>
@@ -188,7 +186,6 @@ function Ticketing(props) {
 
                     <div className={'selecttime'}><TimeTable input={input} setInput={setInput} changeData={changeData} st={st}/></div>
                 </div>
-                {/*<button type={"button"} className={'selectseat'} onClick={() => navi("/ticketing/selectseat",{input, setInput})} input={input} setInput={setInput} changeData={changeData} >좌석선택</button>*/}
 
                 <div className={'step'}>
 

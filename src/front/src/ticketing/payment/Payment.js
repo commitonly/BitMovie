@@ -42,59 +42,21 @@ const Payment = (effect, deps) => {
     IMP.init('imp02023053');
     const mv = location.state.movieData.movie;
 
-    // console.log('이게뭐에요?',location.state.movieData.calender)
-    // console.log(choiceCoupon,'pk보여줘');
-    // console.log(typeof choiceCoupon,'pk보여줘');
     const cpk=choiceCoupon;
-    // console.log(cpk,'?????');
-    // console.log(typeof cpk,'?????');
-
-    // console.log('좌석보여줘',location.state.selected_seat);
-
-    // let selector=JSON.stringify(location.state.selected_seat);
 
     let selector=location.state.selected_seat.join();
 
 
-    // console.log('보자',location.state.obj3.scrtime_pk);
 
     const timePk= location.state.obj3.scrtime_pk;
     const cal= JSON.parse(location.state.movieData.time)
-    // console.log(cal,'?')
-    // console.log(cal.scrt_stime)
-    // console.log(timePk);
 
     const poster =location.state.obj.m_photo;
 
-    // console.log(poster)
-
-
-
-    // const fixpay=(final)=>{
-    //       final=(location.state.finalPay-discount);
-    // }
-
-    // const final=(location.state.finalPay-discount-usePoint);
-
-
-    // console.log(usePoint,'사용할예정포인트');
-
-    // console.log('결제금액',final);
-
-    // console.log('할인금액보여줘',discount);
-
-
-    // console.log('사용된쿠폰금액',useCoupon);
-    // console.log('사용된포인트긍맥',sale);
     const totalDiscount=(Number(useCoupon)+Number(sale));
-    // const totalDiscount=(Number(choiceCoupon.c_amount)+Number(sale));
-    // const totalDiscount=(Number(choiceCoupon.c_amount)+Number(sale));
-// console.log(useCoupon,'?');
 
 
     const final=(location.state.finalPay-totalDiscount);
-    // console.log(final,'보자');
-    // console.log(totalDiscount,'???');
 
 
     // IMP.request_pay(param, callback) 결제창 호출
@@ -103,35 +65,18 @@ const Payment = (effect, deps) => {
         let date = new Date();
 
         let now = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
-        // console.log(now)
-        // console.log(
-        //     "페이버튼",
-        //     dbData.u_id,
-        //     dbData.u_name,
-        //
-        //     // userIdRef.current,
-        //     // userEmailRef.current,
-        //     // userNameRef.current,
-        // );
 
         IMP.request_pay(
             {
                 pg: 'kakaopay',
-                // pg: 'html5_inicis',
-                // merchant_uid: `${now}_${userIdRef.current}`,
                 merchant_uid: `${now}_${user_pk}`,
                 name: '결제',
-                // amount: finalPriceRef.current - usePoint,
                 amount: final,
-                // buyer_email: userEmailRef.current,
                 buyer_email: sessionStorage.u_id,
-                // buyer_name: userNameRef.current,
                 buyer_name: sessionStorage.u_name,
-                // buyer_tel: userPhoneRef.current,
                 buyer_tel: dbData.u_phone,
                 buyer_addr: "",
             },(rsp) => {
-                // callback
                 if (rsp.success) {
 
                     const paymentData = {
@@ -190,22 +135,6 @@ const Payment = (effect, deps) => {
         );
     }
 
-    // const createSeatNum = ()=>{
-    //     const arr = [];
-    //     for(let i = 65; i <= 90; i++){
-    //         let seatNum="";
-    //         for(let j= 1; j<10; j++) {
-    //             seatNum += String.fromCharCode(i);
-    //             seatNum += j;
-    //             arr.push(<option key={seatNum} value={seatNum}>{seatNum}</option>);
-    //             seatNum="";
-    //         }
-    //     }
-    //     return arr;
-    // }
-
-    // console.log(choiceCoupon);
-
     //db에서 유저정보 받아오자
     const comeDb=()=>{
         let user_pk=sessionStorage.user_pk;
@@ -225,61 +154,6 @@ const Payment = (effect, deps) => {
     },[])
 
 
-
-    // const done=(e)=>{
-    //
-    //
-    //     setChoiceCoupon(coupon[e.target.value])
-    //     // setUsePoint(coupon[e.target.value]);
-    //     // setDiscount(coupon[e.target.value]);
-    // }
-
-    // console.log(usePoint,'usePoint값');
-    // console.log('db정보',dbData);
-    // console.log("쿠폰이다",coupon[0].c_amount);
-    // console.log('???',coupon);
-    // const some = JSON.parse(choiceCoupon);
-
-    // const some= Object.values(choiceCoupon);
-    // console.log(JSON.parse(choiceCoupon),'보여주세요');
-    // console.log(choiceCoupon[0], ' 초이스 쿠폰 ');
-    //
-    //
-    // console.log(choiceCoupon.coupon_pk);
-    // console.log(choiceCoupon.c_amount);
-    //
-    // console.log(choiceCoupon.c_amount);
-    // console.log(choiceCoupon.coupon_pk);
-
-    // console.log(choiceCoupon.c_amount);
-    //밑에서 가져온것들
-
-    // setDiscount(e.target.value),
-    // setUseCoupon(e.target.value),
-    // setChoiceCoupon(coupon[e.target.value])
-
-
-
-
-
-
-    // const saveAmount=(choiceCoupon.c_amount);
-    // console.log(saveAmount,'!!');
-
-    // console.log(coupon.coupon_pk,'보자');
-    // console.log(typeof choiceCoupon);
-    // console.log(some);
-    //쿠폰 정보 담기
-
-    // const saveCoupon=(e)=>(
-    //
-    //
-    //
-    //
-    //
-    // )
-
-
     const goback=()=> {
 
         Swal.fire({
@@ -287,8 +161,6 @@ const Payment = (effect, deps) => {
             text: "결제를 취소하시겠습니까?",
             icon: 'warning',
             showCancelButton: true,
-            // confirmButtonColor: '#3085d6',
-            // cancelButtonColor: '#d33',
             confirmButtonText: '확인',
             cancelButtonText: '취소'
         }).then((result) => {
@@ -312,18 +184,10 @@ const Payment = (effect, deps) => {
         axios.get(`http://localhost:8282/payment/coupon?user_pk=${user_pk}`)
             .then((res) => {
                 setCoupon(res.data);
-                // console.log('쿠폰',res.data);
             }).catch((error) => {
-            // console.log('쿠폰이 존재하지 않아요')
         });
     }
 
-    // console.log('사용할 포인트',usePoint);
-    //
-    // console.log(dbData);
-    // console.log(location.state);
-    //
-    // console.log('쿠폰',coupon);
 
 
     return (
@@ -345,26 +209,11 @@ const Payment = (effect, deps) => {
                     )}
                            disabled defaultValue={timePk}
                     />
-                    {/*<input type={'text'}  onChange={(e) => (*/}
-                    {/*    setBookTheName(e.target.value)*/}
-                    {/*)}*/}
-                    {/*       disabled defaultValue={location.state.obj2.the_name}*/}
-                    {/*/>*/}
 
                     <br/>
 
-                    {/*<input type={'number'} onChange={(e) => (*/}
-                    {/*    setBookAdultCnt(e.target.value)*/}
-                    {/*)}defaultValue={location.state.adults} disabled*/}
-                    {/*/>*/}
                     <br/>
 
-                    {/*<input type={'number'}onChange={(e) => (*/}
-                    {/*    setBookYouthCnt(e.target.value)*/}
-                    {/*)}*/}
-                    {/*       defaultValue={location.state.students} disabled*/}
-                    {/*/>*/}
-                    {/*<br/>*/}
                 </div>
 
                 <br/>
@@ -413,7 +262,6 @@ const Payment = (effect, deps) => {
                            }}
                            onChange={(e) => (
 
-                               // compare =Number(e.target.value);
 
 
                                e.target.value<0?
@@ -467,16 +315,10 @@ const Payment = (effect, deps) => {
 
 
                     &nbsp;&nbsp;<b style={{fontSize:'10px',paddingBottom:'20%'}}>보유포인트({dbData.u_point}p)<br/> </b>
-                    {/*<select type={'number'} onChange={(e)=>(*/}
-                    {/*     setDiscount(e.target.value),*/}
-                    {/*         setUseCoupon(e.target.value),*/}
-                    {/*        setChoiceCoupon(coupon[e.target.value])*/}
-                    {/*)}*/}
 
 
 
 
-                    {/*>*/}
                     <div className={'selectbox'} style={{marginTop:'5px',marginBottom:'5px'}}>
 
                     <select className={'select'} onChange={(e)=> {
@@ -524,28 +366,8 @@ const Payment = (effect, deps) => {
                     </div>
 
 
-                    {/*<input type={"text"} value={totalDiscount} readOnly />할인적용*/}
                     할인적용 {totalDiscount}
                     <br/>
-                    {/*<select  type={'number'}>*/}
-                    {/*<option>*/}
-                    {/*    쿠폰선택*/}
-                    {/*</option>*/}
-                    {/*    <option>*/}
-                    {/*        /!*defaultValue={coupon[0].c_amount}*!/*/}
-                    {/*    </option>*/}
-                    {/*    <option>*/}
-                    {/*        /!*defaultValue={coupon[0].c_amount}*!/*/}
-                    {/*    </option>*/}
-                    {/*</select>*/}
-                    {/*    <br/><br/>*/}
-
-
-                    {/*<input type={'number'} ref={finalPriceRef}onChange={(e) => (*/}
-                    {/*    finalPriceRef.current = e.target.value*/}
-                    {/*)}*/}
-                    {/*       value={final} disabled*/}
-                    {/*/>*/}
                     최종금액    <span style={{color:'tomato'}}>{final}</span>
                     <br/>
 
@@ -568,10 +390,8 @@ const Payment = (effect, deps) => {
             </div>
 
 
-            {/*<div className={'btns'}>*/}
                 <button className={'btn1'} onClick={goback}> 취소하기</button>
                 <button className={'btn2'} onClick={requestPay}>결제하기</button>
-            {/*</div>*/}
 
         </>
     );

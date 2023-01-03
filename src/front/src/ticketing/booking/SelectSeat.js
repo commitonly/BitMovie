@@ -12,14 +12,11 @@ const generateArray = (length) => Array.from({ length }, (_, i) => ({ id: i, sel
 
 export default function App(props) {
     const location = useLocation();
-    // console.log('state',location.state);
 
     const movieData= location.state.input;
-    // console.log(movieData);
 
 
     let allData=useLocation();
-    // console.log(allData);
 
     const [seats, setSeats] = useState(generateArray(10));
     const {input, setInput, changeData}=props;
@@ -27,9 +24,6 @@ export default function App(props) {
     const [people, setPeople] = useState({
         ADULT: { array: generateArray(8), num: 0 },
         CHILD: { array: generateArray(8), num: 0 },
-
-
-
 
 
     });

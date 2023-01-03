@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Icon } from '@iconify/react';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { format, addMonths, subMonths } from 'date-fns';
@@ -12,8 +11,6 @@ const RenderHeader = ({ currentMonth, prevMonth, nextMonth, input, setInput, cha
     return (
         <div className={"calender-body"}>
             <div className="header row" >
-                {/*<div className="col col-start" >*/}
-                {/*<span className="text" >*/}
                 <div className="col col-end" style={{fontSize:'20px', marginTop:'7%', marginBottom:'10%', padding:'0' ,height:'20px'}}>
                     <ArrowBackIosIcon style={{marginRight:'3%'}} onClick={prevMonth} />
                     <span className="text month"  >
@@ -22,11 +19,7 @@ const RenderHeader = ({ currentMonth, prevMonth, nextMonth, input, setInput, cha
                     </span>
                     <ArrowForwardIosIcon style={{marginLeft:'3%'}} onClick={nextMonth} />
                 </div>
-                {/*</span>*/}
-                {/*</div>*/}
                 <div>
-
-
 
 
                 </div>
@@ -39,12 +32,6 @@ const RenderDays = () => {
     const days = [];
     const date = ['일', '월', '화', '수', '목', '금', '토'];
 
-    // const theDay = new Date('');
-    // const day1 = theDay.getDay();
-    // // Sunday - Saturday : 0 - 6
-    //
-    // console.log(day1,'???????');
-    // // expected output: 2
 
 
 

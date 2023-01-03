@@ -7,7 +7,6 @@ import {CircularProgress} from "@mui/material";
 const MovieList = (props) => {
 
     const {input,setInput,changeData,get2,get3,mvlist,setMvlist}=props;
-    // const [mvlist,setMvlist] = useState([]);
     const [loading,setLoading]=useState(true);
     const [color, setColor] = useState("");
 
@@ -20,26 +19,6 @@ const MovieList = (props) => {
             });
     }
 
-    //
-    // const get2=()=>{
-    //     setLoading(true);
-    //     axios.get('http://localhost:8282/booking/screening_list?order_stand=reserve_rate&BorA=after')
-    //         .then((response) =>{
-    //             setMvlist(response.data);
-    //             setLoading(false);
-    //
-    //         });
-    // }
-    //
-    // const get3=()=>{
-    //     setLoading(true);
-    //     axios.get('http://localhost:8282/booking/screening_list?order_stand=revw_avgstar&BorA=after')
-    //         .then((response) =>{
-    //             setMvlist(response.data);
-    //             setLoading(false);
-    //
-    //         });
-    // }
 
 
     useEffect(()=>{
@@ -82,7 +61,6 @@ const MovieList = (props) => {
                             <ul key={i} style={{paddingLeft: '15px', marginBottom: '5px'}}>
                                 <li style={{listStyle: 'none', width: '400px', wordBreak: 'break-all'}}>
 
-                                    {/*<img src={age} style={{width:'30px', float:'left'}}/>*/}
 
                                     <button className={
                                         color === list ? "select-clicked" : "select-default"

@@ -28,14 +28,6 @@ function Home(props) {
     const today = new Date();
     const targetDT = today.getFullYear()+(today.getMonth()).toString().padStart(2,0)+(today.getDate().toString().padStart(2,0));
     const getMovies = async (type) => {
-        // kobis 영화진흥원 박스 오피스 api
-        // const json = await (
-        //     await fetch(
-        //         `https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${key}&targetDt=${targetDT}`
-        //     )
-        // ).json();
-        // setMovies(json.boxOfficeResult.dailyBoxOfficeList);
-        // setLoading(false);
 
         //더 무비 api
         await axios.get(`https://api.themoviedb.org/3/movie/${type}/?api_key=${key}&language=ko&page=1&region=kr`)
@@ -106,7 +98,6 @@ function Home(props) {
         });
     },[selected_movie]);
 
-    //xUDhdCsLkjU
 
     return (
         <div style={{textAlign:'center'}}>
