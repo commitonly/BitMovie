@@ -45,7 +45,6 @@
   - 로그인한 유저 보유포인트 1000점 미만일 시 포인트 입력창 입력불가 처리
   - 실시간으로 할인된 금액과 최종금액을 보여줌으로써 유저가 실시간할인율 및 결제금액 확인가능
   - 결제 완료 시 해당 유저 pk로 마이페이지 예매내역으로 이동
-  - 
 ![Group 1](https://user-images.githubusercontent.com/90983846/210101462-e956feec-ca98-4a91-b011-6f31fd83b093.png)
 
 <img width="1620" alt="스크린샷 2022-12-13 오후 8 46 42" src="https://user-images.githubusercontent.com/90983846/207309676-4c88dd29-c8ff-47ec-858c-66a33cc6b6ed.png">
