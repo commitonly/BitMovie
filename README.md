@@ -64,7 +64,7 @@
 ## 팀원
 |**이름**|**역할**|**담당 기능**                               |**Git URL**                     |
 |-------|-----------|--------------------------------------------|--------------------------------|
-| 김태민 | <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> | 결제, 예매                                    | https://github.com/commitonly  |
+| 김태민 | <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> | 예매, 좌석선택, 결제, 메인페이지(sub)                                   | https://github.com/commitonly  |
 | 김성민 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> | 결제, 예매                                    | https://github.com/keeptrynjoy |
 | 이준민 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">  | 로그인, 회원가입, MyPage                         | https://github.com/Jxnmin      |
 | 유희준 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">  | 영화리스트, 상세페이지, 리뷰, 검색                    | https://github.com/J-LOOK-J    |
