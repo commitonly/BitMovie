@@ -2,6 +2,11 @@
 
 ## 프로젝트 소개
 영화 예매 서비스를 제공하기 위해 필요한 기능들을 리액트와 스프링부트를 사용하여 구현했습니다.
+
+## 프로젝트 미리보기
+<img width="1666" alt="스크린샷 2023-01-13 오후 2 29 58" src="https://user-images.githubusercontent.com/90983846/212244497-f27458a1-582a-4bda-bbcc-694ae2f60103.png">
+<img width="1689" alt="스크린샷 2023-01-13 오후 2 30 06" src="https://user-images.githubusercontent.com/90983846/212244503-1b18983b-a4a7-4abc-906d-06beae5e3a13.png">
+
 <br/>
 
 ## 주요 페이지
