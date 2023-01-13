@@ -18,9 +18,7 @@ function Ticketing(props) {
     const refresh = () => {
         window.location.reload();
     }
-// 리팩토링 시작 1.4
 
-// 개인프로젝트로 변동
     const navi = useNavigate();
     const today = moment().format("yyyy-MM-DD");
     const [input, setInput] = useState({
