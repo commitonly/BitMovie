@@ -2,6 +2,12 @@
 
 ## 프로젝트 소개
 영화 예매 서비스를 제공하기 위해 필요한 기능들을 리액트와 스프링부트를 사용하여 구현했습니다.
+
+- 프로젝트 미리보기
+<img width="1666" alt="스크린샷 2023-01-13 오후 2 29 58" src="https://user-images.githubusercontent.com/90983846/212244497-f27458a1-582a-4bda-bbcc-694ae2f60103.png">
+<img width="1550" alt="스크린샷 2023-01-13 오후 2 31 22" src="https://user-images.githubusercontent.com/90983846/212244656-707ff3e7-9816-4572-ad5b-c5522dccf1fe.png">
+
+
 <br/>
 
 ## 주요 페이지
@@ -45,7 +51,6 @@
   - 로그인한 유저 보유포인트 1000점 미만일 시 포인트 입력창 입력불가 처리
   - 실시간으로 할인된 금액과 최종금액을 보여줌으로써 유저가 실시간할인율 및 결제금액 확인가능
   - 결제 완료 시 해당 유저 pk로 마이페이지 예매내역으로 이동
-  - 
 ![Group 1](https://user-images.githubusercontent.com/90983846/210101462-e956feec-ca98-4a91-b011-6f31fd83b093.png)
 
 <img width="1620" alt="스크린샷 2022-12-13 오후 8 46 42" src="https://user-images.githubusercontent.com/90983846/207309676-4c88dd29-c8ff-47ec-858c-66a33cc6b6ed.png">
@@ -63,13 +68,13 @@
 <br/>
 
 ## 팀원
-|**이름**|**역할**| **담당 기능**                               |**Git URL**                     |
-|-------|-----------|-----------------------------------------|--------------------------------|
-| 김태민 | <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> | 결제, 예매, 좌석페이지, 메인페이지(서브)                | https://github.com/commitonly  |
-| 김성민 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> | 결제, 예매                                  | https://github.com/keeptrynjoy |
-| 이준민 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">  | 로그인, 회원가입, MyPage                       | https://github.com/Jxnmin      |
-| 유희준 | <img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">  | 영화리스트, 상세페이지, 리뷰, 검색                    | https://github.com/J-LOOK-J    |
-| 정지훈 | <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black"> | 로그인, 회원가입, Mypage, 영화리스트, 상세페이지, 리뷰, 검색 | https://github.com/greetjeehun |
+|**이름**|**역할**|**담당 기능**                               |**Git URL**                     |
+|-------|-----------|--------------------------------------------|--------------------------------|
+| 김태민 |<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">| 예매, 좌석선택, 결제, 메인페이지(sub)                                   | https://github.com/commitonly  |
+| 김성민 |<img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">| 결제, 예매                                    | https://github.com/keeptrynjoy |
+| 이준민 |<img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">| 로그인, 회원가입, MyPage                         | https://github.com/Jxnmin      |
+| 유희준 |<img src="https://img.shields.io/badge/SPRINGBOOT-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">| 영화리스트, 상세페이지, 리뷰, 검색                    | https://github.com/J-LOOK-J    |
+| 정지훈 |<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">| 로그인, 회원가입, Mypage, 영화리스트, 상세페이지, 리뷰, 검색 | https://github.com/greetjeehun |
 <br/>
 
 ## 기술 소개
